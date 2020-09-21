@@ -1,0 +1,21 @@
+.Grid2 > div {
+   background: chocolate;
+    text-align: center;
+    padding:20px;  
+}
+
+.Grid2 > div:nth-child(odd)
+{
+    background: cornflowerblue;
+}
+
+.Grid2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+     grid-auto-rows: minmax(80px,auto) ;
+     grid-template-rows: repeat(10,minmax(50px,auto));
+    /*grid-template-rows: repeat(10,30px);*/
+    grid-gap: 10px;
+    
+}
+

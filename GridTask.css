@@ -1,0 +1,33 @@
+.container{
+    text-align: center;
+    display: grid;
+    background: chartreuse;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(3,20px);
+    padding:30px;
+    grid-template-areas: 
+    'head head head'
+    'Men mai rig'
+    'Men foot foot';
+
+}
+.container > div {
+    background: rosybrown;
+}
+#h1{
+    grid-area: head;
+}
+#men{
+    grid-area: Men;
+}
+#mai{
+    grid-area:mai;
+}
+#right{
+    grid-area: rig;
+}
+#foot{
+    grid-area: foot;
+}

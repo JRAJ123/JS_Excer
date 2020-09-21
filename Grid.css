@@ -1,0 +1,17 @@
+.container > div{
+    background-color: thistle;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container > div:nth-child(odd){
+background-color: darkslateblue;
+}
+    
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin: 15px;
+}
