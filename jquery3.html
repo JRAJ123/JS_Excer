@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Excercise</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+       $(function(){
+          $('p').on( {
+                  mouseenter:function(){
+                      $(this).css('background-color','lightery');
+                  },
+                  mouseleave:function(){
+                      $(this).css('background-color','lightblue');
+                  },
+                  click:function(){
+                      $(this).css('background-color','yellow');
+                  }
+          } );
+       });
+    </script>
+</head>
+<body>
+    <h2>This is Heading</h2>
+    <p>This is Paragraph</p>
+    <p>This is another Paragraph</p>
+    <button>Click me to  hide the Paragraph</button>
+</body>
+</html>

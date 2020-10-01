@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Fade Effect</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+$(function(){
+    $('button').click(function(){
+         $('#div1').fadeToggle(3000);
+         $('#div2').fadeToggle(4000);
+         $('#div3').fadeToggle(5000);
+         $('#div4').fadeToggle(6000);
+         $('#div5').fadeToggle(7000);
+         $('#div6').fadeToggle(8000);
+    });
+});
+    </script>
+</head>
+<body>
+    <p>Demonstrate fadeIn() with different parameters.</p>
+
+<button>Click to fade in boxes</button><br><br>
+
+<div id="div1" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+
+<button>Click fade out in boxes</button><br><br>
+<div id="div4" style="width:80px;height:80px;display:none;background-color:red;"></div><br>
+<div id="div5" style="width:80px;height:80px;display:none;background-color:green;"></div><br>
+<div id="div6" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+</body>
+</html>

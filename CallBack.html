@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CallBack Functions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(function(){
+       $('button').click(function(){
+           $('p').hide('slow',function(){
+                    alert('This is Paragraph is now hidden');
+           });
+       }); 
+        });
+    </script>
+</head>
+<body>
+    <button>Hide</button>
+
+<p>This is a paragraph with little content.</p>
+</body>
+</html>
